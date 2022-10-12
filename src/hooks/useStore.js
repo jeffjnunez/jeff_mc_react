@@ -60,7 +60,11 @@ export const useStore = create((set) => ({
             })
         }));
     },
-    setTexture: () => {},
+    setTexture: (texture) => {
+        set(() => ({
+            texture
+        }));
+    },
     saveWorld: () => {},
     resetWorld: () => {}
 }));

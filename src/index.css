@@ -53,3 +53,17 @@
     color: white;
     opacity: 70%;
   }
+
+  .texture-selector {
+    transform: translate(-50%, +50%) scale(5);
+  }
+
+  .texture-selector img {
+    border: 2px solid rgba(255, 255, 255, 0);
+    opacity: 70%;
+  }
+
+  .texture-selector img.active {
+    border: 2px solid yellow;
+    opacity: 90%;
+  }
