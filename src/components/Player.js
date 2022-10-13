@@ -20,7 +20,7 @@ export const Player = () => {
     const [ref, api] = useSphere(() => ({
         mass: 1,
         type: 'Dynamic',
-        'position': [0, 1, 10]
+        'position': [0, 0.5, 10]
     }));
 
     const vel = useRef([0, 0, 0]);
@@ -72,13 +72,6 @@ export const Player = () => {
                 vel.current[2],
             );
         }
-
-        // // console.log(sideVector, frontVector);
-        // api.velocity.set(
-        //     sideVector.x * MOVE_FORCE,
-        //     vel.current[1],
-        //     frontVector.z * MOVE_FORCE
-        // );
     });
 
     return (
