@@ -67,3 +67,8 @@
     border: 2px solid yellow;
     opacity: 90%;
   }
+
+  .menu {
+    top: 0px;
+    left: 10px;
+  }

@@ -41,7 +41,6 @@ export const TextureSelector = () => {
 
         const pressedTexture = Object.entries(textures).find(([k, v]) => v);
         if (pressedTexture) {
-            console.log('pressed', pressedTexture);
             setTexture(pressedTexture[0]);
         }
     }, [setTexture, dirt, grass, glass, wood, log]);
@@ -49,7 +48,7 @@ export const TextureSelector = () => {
     useEffect(() => {
         const visibilityTimeout = setTimeout(() => {
             setVisible(false);
-        }, 200000);
+        }, 2000);
         setVisible(true);
 
         return () => {
